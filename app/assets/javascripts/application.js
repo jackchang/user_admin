@@ -14,3 +14,38 @@
 //= require jquery-ui
 //= require jquery_ujs
 //= require_tree .
+
+function setup_edit_user_dialog(){
+  $("#edit_user").dialog({                                                                    
+    autoOpen: false,
+    width: 450,
+    buttons: {
+      "Cancel": function(){
+        $(this).dialog("close");
+      } 
+    } 
+  }); 
+}
+
+function setup_add_user_dialog(){
+  $("#add_user").dialog({                                                                    
+    autoOpen: false,
+    width: 450,
+    buttons: {
+      "Cancel": function(){
+        $(this).dialog("close");
+      }
+    } 
+  }); 
+}
+
+$(window).bind('resize', function() {
+  $("#users_list").setGridWidth($(window).width() * 0.95);
+}).trigger('resize');
+
+$(document).ready(function(){
+  setup_edit_user_dialog();
+  setup_add_user_dialog();
+  $(window).resize();
+});
+

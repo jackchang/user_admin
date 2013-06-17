@@ -16,17 +16,13 @@
 <div id="pagered"></div> 
 
 <script>
-//$("#edit_button").click(function(){ var gr = jQuery("#users_list").jqGrid('getGridParam','selrow'); if( gr != null ) {jQuery("#users_list").jqGrid('editGridRow',gr,{height:280,reloadAfterSubmit:false});} else alert("Please Select Row"); });
 
-$("#edit_button").click(function(){ var gr = jQuery("#users_list").jqGrid('getGridParam','selrow'); if( gr != null ) window.location="/users/"+gr+"/edit"; else alert("Please Select Row"); });
+$("#edit_button").click(function(){ var gr = jQuery("#users_list").jqGrid('getGridParam','selrow'); if( gr != null ) 
+    $.get('/users/' + gr + '/edit');
+ else alert("Please Select Row"); });
 
-$("#add_button").click(function(){ window.location="/users/new"});
+$("#add_button").click(function(){ $.get('/users/new') });
 
-//$("#add_button").click(function(){jQuery("#users_list").jqGrid('editGridRow','new',{height:280,reloadAfterSubmit:false})});
+$("#role_button").click(function(){window.open("/roles", "Add/Edit Roles", 'width=800, height=500')});
 
-$("#role_button").click(function(){window.open("/roles")});
-
-$(window).bind('resize', function() {
-    $("#users_list").setGridWidth($(window).width() - 40);
-}).trigger('resize');
 </script>

@@ -24,8 +24,6 @@ Unit tests on models and controllers
 You can use a grid framework like jqGrid, SlickGrid, DataTables, etc
 
 == Installation
-Rails 3.2.13
-Ruby 1.9.3
 Database: Postgres
 Framework used: jqGrid
 
@@ -37,7 +35,7 @@ Framework used: jqGrid
 
   $ modify Gemfile for database gem (I use Postgres), and modify config/database.yml for database adaptor)
 
-  $ rake db:create
+  $ rake db:create 
 
   $ rake db:migrate
 

@@ -53,7 +53,7 @@ class UsersControllerTest < ActionController::TestCase
   end
 
   test "should get new" do
-    get :new
+    get :new, format: :js
     assert_response :success
   end
 
@@ -62,7 +62,7 @@ class UsersControllerTest < ActionController::TestCase
     assert_difference('User.count',1) do
       post :create, user: { email: @user.email, first_name: @user.first_name, last_name: @user.last_name, role_names: @user.roles, user_name: @user.user_name }
     end
-    assert_redirected_to user_path(assigns(:user))
+    assert_response :success
   end
 
   test "should show user" do
@@ -71,13 +71,13 @@ class UsersControllerTest < ActionController::TestCase
   end
 
   test "should get edit" do
-    get :edit, id: @user
+    get :edit, id: @user, format: :js
     assert_response :success
   end
 
   test "should update user" do
-    put :update, id: @user, user: { email: @user.email, first_name: @user.first_name, last_name: @user.last_name, role_names: @user.roles, user_name: @user.user_name }
-    assert_redirected_to user_path(assigns(:user))
+    put :update, id: @user, user: { email: @user.email, first_name: @user.first_name, last_name: @user.last_name, user_name: @user.user_name }, format: :js
+    assert_response :success
   end
 
   test "should destroy user" do
