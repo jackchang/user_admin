@@ -1,0 +1,26 @@
+// Place all the styles related to the Roles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#role_list {
+  width:100%
+}
+
+#role_list th {
+  padding-left: 4px;
+  padding-top: 4px;
+  text-align: left;
+  color: #ffffff;
+  background-color: #00557F;
+  vertical-align: top;
+  text-align: center;
+}
+
+.oddrow{
+  background-color: #efefef;
+}
+
+.evenrow{
+  background-color: #fcfcfc;
+}
+

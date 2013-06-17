@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title>UserAdmin Snapshots</title>
+ 
+  <script src="public/jquery.min.js" type="text/javascript"></script>
+  <style type="text/css">
+  .active {width: 700px;
+           height:500px;
+           display:block;
+           border: 2px solid;}
+   .hide {display: none;}
+   .thumb {width: 99px;
+           height: 99px;}
+  </style>
+</head>
+<body>
+<div id="panel" border="1">
+    <img src="public/uadmin_main.png" title="Main page" class="active" />
+    <img src="public/uadmin_filter.png" title="Filtering" class="hide" />
+    <img src="public/edit_selected_user.png" title="Edit selected" class="hide" />
+    <img src="public/add_user.png" title="Add user" class="hide" />
+    <img src="public/delete_user.png" title="delete user" class="hide" />
+    <img src="public/list_role.png" title="List roles" class="hide" />
+    <img src="public/add_role.png" title="Add role" class="hide" />
+    <img src="public/edit_role.png" title="Edit role" class="hide" />
+ 
+</div>
+<br>
+<br>
+<div id="thumbs">
+    <img src="public/uadmin_main.png" title="Main page"  class="thumb" />
+    <img src="public/uadmin_filter.png" title="Filtering" class="thumb" />
+    <img src="public/edit_selected_user.png" title="Edit selected" class="thumb" />
+    <img src="public/add_user.png" title="Add user" class="thumb" />
+    <img src="public/delete_user.png" title="delete user" class="thumb"/>
+    <img src="public/list_role.png" title="List roles" class="thumb" />
+    <img src="public/add_role.png" title="Add role" class="thumb" />
+    <img src="public/edit_role.png" title="Edit role" class="thumb" />
+</div>
+<script>
+$('#thumbs img').click( function() {
+    var thumbindex = $(this).index();
+    $('.active').addClass('hide');
+    $('.active').removeClass('active');
+    $('#panel img').eq(thumbindex).removeClass('hide');
+    $('#panel img').eq(thumbindex).addClass('active');
+});
+</script>
+</body>
+</html>
