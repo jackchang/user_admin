@@ -1,8 +1,8 @@
-== Assignment: User Management
+User Management (Ruby on Rails)
 
 Create a simple application for an administrator to manage users and their roles. A user can have zero to many roles and a role can have many users.
 
-The administrator will see a grid that contains all of the users. The grid will have the following columns
+The administrator will see a grid that contains all of the users. The grid has the following columns
 
     1.User ID
     2. Username
@@ -12,16 +12,13 @@ The administrator will see a grid that contains all of the users. The grid will 
     6. Roles (represented as comma-delimited list)
 
 
-The grid should have the following functionality:
+functionality:
 
     1. Support sorting on the User ID, Username, Email Address, First Name, and Last Name columns
     2. Support filtering by Username, Email Address, First Name, and Last Name, and Role
     3. Support editing existing and creating new users directly into the grid. Adding/Editing the role association does not have to be in the grid
     4. Support deleting a user from the system
 
-Unit tests on models and controllers
-
-You can use a grid framework like jqGrid, SlickGrid, DataTables, etc
 
 == Installation
 Database: Postgres
