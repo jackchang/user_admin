@@ -1,6 +1,6 @@
 User Management (Ruby on Rails)
 
-Create a simple application for an administrator to manage users and their roles. A user can have zero to many roles and a role can have many users.
+An application for an administrator to manage users and their roles. A user has zero to many roles and a role can have many users.
 
 The administrator will see a grid that contains all of the users. The grid has the following columns
 
@@ -16,8 +16,9 @@ functionality:
 
     1. Support sorting on the User ID, Username, Email Address, First Name, and Last Name columns
     2. Support filtering by Username, Email Address, First Name, and Last Name, and Role
-    3. Support editing existing and creating new users directly into the grid. Adding/Editing the role association does not have to be in the grid
+    3. Support editing existing and creating new users directly into the grid
     4. Support deleting a user from the system
+    5. Support user input validation
 
 
 == Installation
