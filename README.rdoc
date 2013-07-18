@@ -4,7 +4,7 @@ Create a simple application for an administrator to manage users and their roles
 
 The administrator will see a grid that contains all of the users. The grid has the following columns
 
-    1.User ID
+    1. User ID
     2. Username
     3. Email Address
     4. First Name
@@ -30,7 +30,7 @@ Framework used: jqGrid
 
   $ bundle install
 
-  $ modify Gemfile for database gem (I use Postgres), and modify config/database.yml for database adaptor)
+  $ modify Gemfile for database gem (I use Postgres), and modify database adaptor in config/database.yml
 
   $ rake db:create 
 
