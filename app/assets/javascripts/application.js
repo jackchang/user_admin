@@ -47,5 +47,15 @@ $(document).ready(function(){
   setup_edit_user_dialog();
   setup_add_user_dialog();
   $(window).resize();
+  
+  $("#edit_button").click(function(){
+   var gr = jQuery("#users_list").jqGrid('getGridParam','selrow'); 
+   if( gr != null ) 
+    $.get('/users/' + gr + '/edit');
+   else alert("Please Select Row"); });
+
+   $("#add_button").click(function(){ $.get('/users/new') });
+
+   $("#role_button").click(function(){window.open("/roles", "Add/Edit Roles", 'width=800, height=500')});
 });
 
