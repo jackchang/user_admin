@@ -109,6 +109,7 @@ private
     @user.update_attributes(:role_names => @user.roles.map(&:name).sort.join(","))
   end
   
+  # TODO: put this in helper
   def filter_option options
     condition = []
     if options[:_search] == "true"
