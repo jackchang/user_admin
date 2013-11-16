@@ -42,3 +42,5 @@ Framework used: jqGrid
      2. add users by clicking "Add User" button
 
 Sanpshots: file://user_admin/snapshot.html
+
+TODO: Able to load JSON/CSV files to database
