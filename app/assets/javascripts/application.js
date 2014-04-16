@@ -11,9 +11,11 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
-//= require jquery-ui
 //= require jquery_ujs
+//= require jquery.ui.all
 //= require_tree .
+// provides jqgrid jquery plugin from gem 'jqgrid-jquery-rails':
+//= require jqgrid-jquery-rails
 
 function setup_edit_user_dialog(){
   $("#edit_user").dialog({                                                                    
