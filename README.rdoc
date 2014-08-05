@@ -1,4 +1,4 @@
-User Management (Ruby on Rails)
+User Management (Ruby on Rails) integrated with jQGrid framework
 
 An application for an administrator to manage users and their roles. A user has zero to many roles and a role can have many users.
 
@@ -22,7 +22,7 @@ functionality:
 
 
 == Installation
-Database: Postgres
+Database: Postgres,
 Framework used: jqGrid
 
   $ cd user_admin
